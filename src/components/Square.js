@@ -1,6 +1,15 @@
 import React from 'react';
 
-const Square = () => (
+//props are readonly
+//Destructuring props
+// const props = {
+//     onClick: () => "function",
+//     value: "x"
+// };
+
+// const { value } = props;
+
+const Square = ({ value, onClick }) => (
     <button onClick={ onClick }>
         { value }
     </button>
