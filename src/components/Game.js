@@ -35,7 +35,7 @@ const Game = () => {
 
     const jumpTo = step => {
         setStepNumber(step);
-        setXisNext(step % 2 === 0)
+        setXisNext(step % 2 === 0);
     };
     
     const renderMoves = () => (
@@ -48,11 +48,6 @@ const Game = () => {
             );
         })
     );
-
-    // {
-    //     return <button onClick={() => setBoard(Array(9).fill(null))}></button>
-    // }
-
 
     return (
         // it can only return one tag co wrap in fragment
